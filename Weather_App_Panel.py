@@ -35,7 +35,7 @@ def weatherCheck():
         current_humidity = y["humidity"]
         z = x["weather"]
         weather_description = z[0]["description"]
-        label1 = Label(window,font=("Arial", 15, BOLD), text='According to Your City Information : \n\nTemperature (in kelvin unit) = {}, \n Atmospheric pressure (in hPa unit) = {}, \n Humidity (in percentage) =  {}, \n Description = {}.'.format(current_temperature, current_pressure, current_humidity,weather_description ))
+        label1 = Label(window,font=("Arial", 15, BOLD), text='According to Your City Information : \n\nYour city name = {}, \nTemperature (in kelvin unit) = {}, \n Atmospheric pressure (in hPa unit) = {}, \n Humidity (in percentage) =  {}, \n Description = {}.'.format(city_name,current_temperature, current_pressure, current_humidity,weather_description ))
         label1.pack()
 
     else:
